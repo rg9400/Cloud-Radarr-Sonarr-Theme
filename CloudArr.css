@@ -1,0 +1,580 @@
+body{
+	background-image: url("https://cdn.rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://cdn.rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+}
+html{
+	min-height: 100%;
+	height: auto;
+}
+a:focus, a:hover , .episode-title-cell:focus, .episode-title-cell:hover{
+	color: #f9be03;
+}
+a , .episode-title-cell{
+	color: #d7d7d7;
+}
+:focus{
+	outline:none;
+}
+.series-item > div.row > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a > h2, .movie-item > div.row > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a > h2, .series-item > div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a > div:nth-child(1), .movie-item > div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a > div:nth-child(1) {
+	color: #d7d7d7;
+}
+.footer {
+	color: #aaa;
+}
+.toggle p span{
+	color: #d7d7d7;
+	line-height:35px;
+}
+
+.text-warning{
+	color: #aaa;
+}
+.movie-item, .series-item{
+	background-color: rgba(0,0,0,.3);
+	margin-bottom: 30px;
+	padding: 5px;
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
+	width:99%;
+}
+@media (min-width: 768px) { 
+	.movie-item, .series-item, .backdrop .navbar-nzbdrone, .series-posters .movie-poster-container, #add-movies-screen .new-movies .search-item , .thingy, .metadata-item{
+		-webkit-box-shadow: 3px 5px 15px black;
+		box-shadow:3px 5px 15px black;
+	}
+}
+#scroll-up{
+	color: #d7d7d7;
+}
+.icon-sonarr-refresh:hover, .icon-sonarr-refresh:focus, .icon-sonarr-refresh:active, .icon-sonarr-edit:hover, .icon-sonarr-edit:focus, .icon-sonarr-edit:active{
+	cursor: pointer;
+}
+.series-posters .movie-poster-container {
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
+}
+.series-posters .movie-posters-item {
+	background-color:transparent;
+	box-shadow: none;
+}
+.series-posters .movie-posters-item .labels :hover{
+	cursor: pointer;
+}
+.series-posters .series-poster-container .series-controls, .series-posters .series-poster-container .hidden-title, .series-posters .movie-poster-container .movie-controls, .series-posters .movie-poster-container .hidden-title {
+	color: white;
+	background-color:rgba(0,0,0,.7);
+	opacity: 1;
+	cursor:default;
+}
+#add-movies-screen .new-movies .search-item, .thingy, .metadata-item{
+	background-color:rgba(0,0,0,.3);
+	color: #d7d7d7;
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
+}
+.dropdown-menu {
+    background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+}
+.dropdown-menu > li > a {
+    color: #d7d7d7;
+}
+.dropdown-menu > li > a:hover {
+	background-color: rgba(255,255,255,.08);
+	color: white;
+}
+.started #page {
+	background-color:transparent;
+	box-shadow:none;
+	color: #d7d7d7;
+}
+.modal-content {
+    background-image: url("https://cdn.rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://cdn.rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+}
+.modal-footer,.modal-body,.modal-header{
+	background-color: transparent;
+	border-top:none;
+	border-bottom:none;
+}
+.label-primary{
+	background-color:rgba(255,255,255,.08);
+}
+.label-primary[href]:hover,.label-primary[href]:focus{
+	background-color: #cc7b19;
+}
+table thead  {
+	background-color: rgba(255,255,255,.2);
+	color: white;
+}
+th.sortable:hover{
+	background:none;
+	background-color:transparent;
+	color:white;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border-color:transparent;
+}
+tbody>tr:nth-of-type(odd){
+	background-color: rgba(255,255,255,0.01);
+}
+tbody>tr:nth-of-type(even){
+	background-color: rgba(255,255,255,0.1);
+}
+.table-hover > tbody > tr:hover {
+    background-color: rgba(255,255,255,.15);
+}
+select.form-control,.form-control, .bootstrap-tagsinput, div.form-control .selectize-input, select, .react-selectize.bootstrap3.root-node .react-selectize-control{
+	background-color: rgba(255,255,255,.08) !important;
+	border: none;
+	color: #d7d7d7;
+}
+.form-control:focus{
+	outline:none;
+	box-shadow:none;
+}
+.control-panel{
+	background-color:rgba(0,0,0,.91);
+	box-shadow:none;
+}
+.react-selectize.root-node .simple-value, .selectize-control.multi .selectize-input > div {
+	background-color: rgba(255,255,255,.25) !important;
+	color: #d7d7d7;
+}
+select option {
+	background-color: black;
+}
+.badge, .badge-inverse{
+	background-color: rgba(255,255,255,.25);
+	color: #d7d7d7;
+}
+.progress {
+	background-color: rgba(255,255,255,.08);
+}
+.progress-bar-purple{
+	background-image: linear-gradient(to bottom, #fbb450, #f89406);
+	background-color: #faa732;
+}
+.form-group i {
+	color: #d7d7d7;
+}
+.input-group.input-group-lg.add-series-search > .input-group-addon, .input-group.input-group-lg.add-movies-search > .input-group-addon,.search .input-group .input-group-addon, .search .input-group input, #add-series-screen .add-series-search > input.form-control.x-series-search, #add-movies-screen .add-movies-search > input.form-control.x-movies-search {
+	background-color: rgba(255,255,255,.08);
+	border-color: transparent;
+	color: #d7d7d7;
+}
+.search.input-group-addon {
+	background-color: rgba(255,255,255,.25);
+	color: #e5e5e5;
+	border-color: transparent;
+}
+.col-md-6.form-control.x-series-search.tt-hint,.col-md-6.form-control.x-series-search.tt-input {
+    background-color: rgba(255,255,255,.08);
+    border-color: transparent;
+    box-shadow: none;
+	color: white;
+}
+.backgrid-paginator > ul > li > i {
+    background-color: rgba(255,255,255,.08);
+	color: #d7d7d7;
+	border:none;
+}
+.backgrid-paginator > ul > li.disabled > i {
+    background-color: rgba(0,0,0,.3);
+	color: #aaa;
+	border: none;
+	text-shadow:none;
+	cursor:default;
+}
+.backgrid-paginator > ul > li.active > span {
+	background-color: rgba(255,255,255,.08);
+	border-color: rgba(255,255,255,.08);
+	color: #d7d7d7;
+}
+.btn {
+	outline: none !important;
+}
+.btn-default,.fc-state-default {
+	background-color: rgba(255,255,255,.08);
+	color: #d7d7d7;
+	border-color: transparent;
+}
+.btn-warning{
+	background-color: #cc7b19;
+	border-color:transparent;
+}
+.btn-primary{
+  color: #fff;
+  background-color: #cc7b19;
+  box-shadow: inset 0 1px 0 #e7993b;
+  border:none;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #eb8600;
+}
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #e59029 !important;
+  box-shadow: inset 0 1px 0 #ebac60 !important;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus , .toggle input:first-of-type:checked~.slide-button, .toggle input:first-of-type:checked~.slide-button.btn-warning{
+  color: #fff;
+  background-color: #cc7b19;
+  box-shadow: inset 0 1px 0 #e7993b;
+  border-color:transparent;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #cc7b19;
+  border-color: #b56d16;
+}
+.toggle .slide-button, .toggle .slide-button.btn-danger, .toggle .slide-button.btn-warning{
+	box-shadow:none;
+	background-color: #c9302c;
+    border-color: transparent;
+}
+.btn-warning.focus, .btn-warning:focus{
+	border-color:transparent;
+}
+.btn-default:hover ,.btn-default.active,.btn-default.active:hover, .btn-default:active:hover , .btn-default.focus.active, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default , .btn-default.focus, .btn-default:focus, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+	background-color: rgba(255,255,255,.25);
+	border-color: rgba(255,255,255,.25);
+	color: white;
+}
+.btn-default.disabled,.btn-default.disabled:hover ,.fc-state-disabled{
+	background-color: rgba(0,0,0,.3);
+	border-color: transparent;
+	color: #aaa;
+	text-shadow:none;
+}
+.input-group-btn > button.btn.btn-icon-only.dropdown-toggle:hover, .input-group-btn > button.btn.btn-icon-only.dropdown-toggle,.btn.btn-icon-only.x-copy-api-key.hidden-xs {
+	background-color: rgba(255,255,255,.25);
+	border-color: rgba(255,255,255,.25);
+	color: white;
+}
+.close{
+	color: #d7d7d7;
+}
+.close:hover,
+.close:focus {
+	color: white;
+}
+.nav-tabs{
+	border-color:transparent;
+}
+.nav-tabs> li> a{
+	margin-right:0px;
+}
+.navbar-nzbdrone li a{
+	color:#ebebeb;
+}
+.nav-tabs.nav-justified> li > a:focus,.nav-tabs.nav-justified > li > a:hover ,.navbar-nzbdrone li a:hover,.navbar-nzbdrone li a:focus ,.nav>li>a:focus, .nav>li>a:hover{
+	color: white;
+	background-color: rgba(255,255,255,.08);
+	border-color: transparent;
+	border-radius:0px;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover,.nav-tabs > li.active > a,.nav-tabs > li.active > a:focus,.nav-tabs > li.active > a:hover{
+	background-color: rgba(255,255,255,.08);
+	border-color: transparent;
+	border-radius:0px;
+	color: #f9be03;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background-color: rgba(255,255,255,.08);
+	border-radius:0px;
+	color: #f9be03;
+	cursor:default
+}	
+.nav-pills>li>a:hover, .nav-pills>li>a:focus{
+	background-color: rgba(255,255,255,.08);
+	border-radius:0px;
+	color: white;
+}
+.nav-stacked>li+li{
+	margin-top:0px;
+}
+@media (min-width: 768px){
+	.nav-tabs.nav-justified>li>a{
+	border-color:transparent;
+	}
+}
+@media (max-width: 767px){
+	.navbar-nzbdrone .navbar-collapse .navbar-nav li:focus, .navbar-nzbdrone .navbar-collapse .navbar-nav li:hover {
+	background-color: rgba(255,255,255,.08);
+	border-color: transparent;
+	border-radius:0px;
+	color: white;
+	}
+}
+legend{
+	color:#d7d7d7;
+}
+.search .tt-dropdown-menu{
+    background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+	opacity:1
+}
+ul.messenger-theme-flat{
+	background-color:rgba(0,0,0,.7);
+}
+.add-card .center{
+	background-color:transparent;
+	border:none;
+}
+.well{
+	background-color:rgba(255,255,255,.08);
+	border:none;
+}
+.movie-tabs-card, .series-season{
+	background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+	-webkit-box-shadow: 3px 3px 0px black;
+	box-shadow:3px 3px 0px black;
+	opacity:1;
+}
+.movie-page-header, .series-page-header{
+	background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+	-webkit-box-shadow: 3px 3px 0px black;
+	box-shadow:3px 3px 0px black;
+	opacity:1;
+}
+.backdrop .navbar-nzbdrone{
+	background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
+	opacity:1;
+}
+@media screen and (max-width: 767px){
+	.table-responsive{
+		border:none;
+	}
+}
+.navbar-nzbdrone .navbar-toggle{
+	background: transparent;
+	border-color:transparent;
+}
+.navbar-nzbdrone .navbar-toggle:hover, .navbar-nzbdrone .navbar-toggle:focus, .navbar-nzbdrone .navbar-toggle:active {
+	background-color: rgba(255,255,255,.08);
+	color: #d7d7d7;
+}
+ul.qualities li, ul.qualities li:hover {
+	background-color: transparent;
+	border-top: 1px solid rgba(120,130,140,.13);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(120, 130, 140, .13);
+	border-bottom:none;
+	border-right:none;
+	border-left:none;
+	color: #d7d7d7;
+}
+ul.qualities li .drag-handle, ul.qualities li .select-handle{
+	line-height:initial;
+	opacity:1;
+	margin-top:3px;
+}
+ul.qualities li.selected .quality-label{
+	color:#d7d7d7;
+}
+#quality-definition-list .rows .row .ui-slider{
+	background-color:rgba(255,255,255,.08);
+}
+
+/* Darker */
+
+.popover.in {
+    opacity: .9;
+}
+
+.popover {
+    background-color: #000;
+    color: #fff;
+}
+
+.popover > .popover-title {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.popover.left > .arrow,
+.popover.left > .arrow:after {
+    border-left-color: #000;
+}
+
+.popover.right > .arrow:after {
+    border-right-color: #000;
+}
+
+.calendar th {
+    background-color: transparent;
+    color: #d7d7d7;
+}
+
+.fc-day.fc-today.fc-state-highlight,
+.fc-day-number.fc-today.fc-state-highlight,
+.fc-day-top.fc-today.fc-state-highlight {
+    background-color: rgba(255,255,255,.1);
+    color: white;
+}
+
+/* calendar list */
+
+.fc-unthemed .fc-list-heading td {
+    background-color: rgba(255,255,255,.2);
+    color: white;
+}
+
+.add-thingy > div > .btn-default,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.add-thingy > div > .btn-default:hover,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+.fc-state-default {
+    color: #d7d7d7;
+    background-color: rgba(255,255,255,.08);
+    border-color: transparent;
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+
+.fc-state-hover {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+
+.fc-state-active {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+.modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: #d7d7d7;
+    background-color: rgba(255,255,255,.08);
+    border-color: transparent;
+    outline-style: none;
+}
+
+.modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+}
+.modal-footer > button:active:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+}
+pre{
+	color:#eee;
+	background-color:rgba(0,0,0,.4);
+	border-color:transparent;
+}
