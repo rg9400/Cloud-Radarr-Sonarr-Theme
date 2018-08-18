@@ -658,9 +658,19 @@ pre{
 .fc-content{
 	padding:2px;
 }
-.fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-popover .fc-header{
+.fc-list-table{
 	background-color: rgba(0,0,0,.3);
+}
+.fc-unthemed .fc-list-empty {
+    background-color: rgba(0,0,0,.3);
+}
+.fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-popover .fc-header, .fc-list-heading{
+	background-color: transparent !important;
 	border-color:transparent;
+}
+.fc-list-item:hover td {
+    background-color: rgba(255,255,255,.08);
+    color: white;
 }
 .calendar th {
     background-color: transparent;
