@@ -671,7 +671,7 @@ pre{
 	border-color:transparent;
 	background-color: rgba(0,0,0,0.08);
 }
-.calendar tr{
+.fc-content-skeleton tr{
 	background-color:transparent !important;
 }
 .fc-widget-content {
