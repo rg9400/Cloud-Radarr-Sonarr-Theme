@@ -612,10 +612,10 @@ pre{
 	color: #d7d7d7;
 	font-weight:400;
 }
-.label-success, .progress-bar-success{
+.label-success, .progress-bar-success, .badge-success{
     border-color: transparent;
     background-color: rgba(92,182,92,.95);
-    color: #eee;
+    color: #d7d7d7;
 }
 .calendar .success{
     border-color: transparent;
@@ -628,9 +628,9 @@ pre{
 }
 .progress-bar-gray , .label-default{
     border-color: transparent;
-    background-color: rgba(255,255,255,.25);
+    background-color: rgba(255,255,255,.08);
 	background-image: none;
-	color: #eee;
+	color: #d7d7d7;
 }
 .calendar .primary{
 	color:#d7d7d7;
@@ -638,13 +638,18 @@ pre{
 	border-color:transparent;
 	font-weight:400;
 }
+.badge-primary{
+    border-color: transparent;
+    background-color: rgba(51,122,183,.95);
+    color: #d7d7d7;
+}
 .event .primary{
 	border-color: #cc7b19;
 }
-.progress-bar-danger, .label-danger{
+.progress-bar-danger, .label-danger, .badge-danger{
     border-color: transparent;
     background-color: rgba(217,83,79,.95);
-    color: #eee;
+    color: #d7d7d7;
 }
 .calendar .danger{
     border-color: transparent;
@@ -652,7 +657,7 @@ pre{
     color: #d7d7d7;
 	font-weight:400
 }
-.label-warning, .progress-bar-warning {
+.label-warning, .progress-bar-warning, .badge-warning {
     background-color: rgba(223,105,26,.95);
 }
 .alert-info, .alert-warning {
@@ -723,4 +728,7 @@ pre{
     border-color: transparent;
     background-color: rgba(217,83,79,.95);
     color: #eee;
+}
+.series-not-monitored .episode-monitored, .series-not-monitored .season-monitored{
+	color:
 }
