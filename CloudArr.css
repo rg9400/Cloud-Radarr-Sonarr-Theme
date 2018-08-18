@@ -43,10 +43,9 @@ a , .episode-title-cell{
 	padding: 5px;
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
-	width:99%;
 }
 @media (min-width: 768px) { 
-	.movie-item, .series-item, .backdrop .navbar-nzbdrone, .series-posters .movie-poster-container, #add-movies-screen .new-movies .search-item , .thingy, .metadata-item{
+	.movie-item, .series-item, .backdrop .navbar-nzbdrone, .series-posters .movie-poster-container, #add-movies-screen .new-movies .search-item , #add-series-screen .new-series .search-item, .thingy, .add-thingy, .metadata-item{
 		-webkit-box-shadow: 3px 5px 15px black;
 		box-shadow:3px 5px 15px black;
 	}
@@ -57,11 +56,11 @@ a , .episode-title-cell{
 .icon-sonarr-refresh:hover, .icon-sonarr-refresh:focus, .icon-sonarr-refresh:active, .icon-sonarr-edit:hover, .icon-sonarr-edit:focus, .icon-sonarr-edit:active{
 	cursor: pointer;
 }
-.series-posters .movie-poster-container {
+.series-posters .movie-poster-container, .series-posters .series-poster-container {
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
 }
-.series-posters .movie-posters-item {
+.series-posters .movie-posters-item , .series-posters .series-posters-item{
 	background-color:transparent;
 	box-shadow: none;
 }
@@ -74,11 +73,28 @@ a , .episode-title-cell{
 	opacity: 1;
 	cursor:default;
 }
-#add-movies-screen .new-movies .search-item, .thingy, .metadata-item{
+#add-movies-screen .new-movies .search-item, #add-series-screen .new-series .search-item, .thingy, .metadata-item, .add-thingy{
 	background-color:rgba(0,0,0,.3);
 	color: #d7d7d7;
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
+}
+.add-thingy > div > .btn-default{
+    color: #d7d7d7;
+    background-color: transparent;
+    border-color: transparent;
+    outline-style: none;
+}
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle {
+    color: #d7d7d7;
+    background-color: transparent;
+    border-color: transparent;
+    outline-style: none;
+}
+.add-thingy > div > .btn-default:hover,.add-thingy > div > .btn-default:focus, .add-thingy > div > .btn-default:active,.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:focus,.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover,.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:active{
+	background-color: rgba(255,255,255,.25);
+	border-color: rgba(255,255,255,.25);
+	color: white;
 }
 .dropdown-menu {
     background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
@@ -95,7 +111,7 @@ a , .episode-title-cell{
 .dropdown-menu > li > a {
     color: #d7d7d7;
 }
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover, .discoverable-list-item:hover {
 	background-color: rgba(255,255,255,.08);
 	color: white;
 }
@@ -187,7 +203,7 @@ select option {
 	border-color: transparent;
 	color: #d7d7d7;
 }
-.search.input-group-addon {
+.search.input-group-addon, .input-group-addon {
 	background-color: rgba(255,255,255,.25);
 	color: #e5e5e5;
 	border-color: transparent;
@@ -201,7 +217,7 @@ select option {
 .backgrid-paginator > ul > li > i {
     background-color: rgba(255,255,255,.08);
 	color: #d7d7d7;
-	border:none;
+	border-color:transparent;
 }
 .backgrid-paginator > ul > li.disabled > i {
     background-color: rgba(0,0,0,.3);
@@ -218,7 +234,10 @@ select option {
 .btn {
 	outline: none !important;
 }
-.btn-default,.fc-state-default {
+.btn.focus, .btn:focus, .btn:hover{
+	color:white;
+}
+.btn-default{
 	background-color: rgba(255,255,255,.08);
 	color: #d7d7d7;
 	border-color: transparent;
@@ -231,7 +250,7 @@ select option {
   color: #fff;
   background-color: #cc7b19;
   box-shadow: inset 0 1px 0 #e7993b;
-  border:none;
+  border-color:transparent;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -300,9 +319,14 @@ fieldset[disabled] .btn-primary.active {
 	color: #aaa;
 	text-shadow:none;
 }
-.input-group-btn > button.btn.btn-icon-only.dropdown-toggle:hover, .input-group-btn > button.btn.btn-icon-only.dropdown-toggle,.btn.btn-icon-only.x-copy-api-key.hidden-xs {
+.input-group-btn > button.btn.btn-icon-only.dropdown-toggle,.btn.btn-icon-only.x-copy-api-key.hidden-xs {
 	background-color: rgba(255,255,255,.25);
-	border-color: rgba(255,255,255,.25);
+	border-color: transparent;
+	color: #d7d7d7;
+}
+.btn.btn-icon-only.x-copy-api-key.hidden-xs:hover, .btn.btn-icon-only.x-copy-api-key.hidden-xs:focus, .input-group-btn > button.btn.btn-icon-only.dropdown-toggle:hover, .input-group-btn > button.btn.btn-icon-only.dropdown-toggle:focus{
+	background-color: rgba(255,255,255,.4);
+	border-color: rgba(255,255,255,.4);
 	color: white;
 }
 .close{
@@ -327,7 +351,7 @@ fieldset[disabled] .btn-primary.active {
 	border-color: transparent;
 	border-radius:0px;
 }
-.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover,.nav-tabs > li.active > a,.nav-tabs > li.active > a:focus,.nav-tabs > li.active > a:hover{
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs > li.active > a,.nav-tabs > li.active > a:focus,.nav-tabs > li.active > a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
 	background-color: rgba(255,255,255,.08);
 	border-color: transparent;
 	border-radius:0px;
@@ -349,15 +373,15 @@ fieldset[disabled] .btn-primary.active {
 }
 @media (min-width: 768px){
 	.nav-tabs.nav-justified>li>a{
-	border-color:transparent;
+		border-color:transparent;
 	}
 }
 @media (max-width: 767px){
 	.navbar-nzbdrone .navbar-collapse .navbar-nav li:focus, .navbar-nzbdrone .navbar-collapse .navbar-nav li:hover {
-	background-color: rgba(255,255,255,.08);
-	border-color: transparent;
-	border-radius:0px;
-	color: white;
+		background-color: rgba(255,255,255,.08);
+		border-color: transparent;
+		border-radius:0px;
+		color: white;
 	}
 }
 legend{
@@ -381,11 +405,11 @@ ul.messenger-theme-flat{
 }
 .add-card .center{
 	background-color:transparent;
-	border:none;
+	border-color:transparent;
 }
 .well{
 	background-color:rgba(255,255,255,.08);
-	border:none;
+	border-color:transparent;
 }
 .movie-tabs-card, .series-season{
 	background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
@@ -434,7 +458,7 @@ ul.messenger-theme-flat{
 }
 @media screen and (max-width: 767px){
 	.table-responsive{
-		border:none;
+		border-color:transparent;
 	}
 }
 .navbar-nzbdrone .navbar-toggle{
@@ -445,7 +469,7 @@ ul.messenger-theme-flat{
 	background-color: rgba(255,255,255,.08);
 	color: #d7d7d7;
 }
-ul.qualities li, ul.qualities li:hover {
+ul.qualities li,ul.qualities li:hover{
 	background-color: transparent;
 	border-top: 1px solid rgba(120,130,140,.13);
     border-top-width: 1px;
@@ -461,6 +485,9 @@ ul.qualities li .drag-handle, ul.qualities li .select-handle{
 	opacity:1;
 	margin-top:3px;
 }
+ul.qualities li .quality-label{
+	color:#aaa;
+}
 ul.qualities li.selected .quality-label{
 	color:#d7d7d7;
 }
@@ -468,7 +495,59 @@ ul.qualities li.selected .quality-label{
 	background-color:rgba(255,255,255,.08);
 }
 
-/* Darker */
+.modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: #d7d7d7;
+    background-color: rgba(255,255,255,.08);
+    border-color: transparent;
+    outline-style: none;
+}
+
+.modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+}
+.modal-footer > button:active:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+}
+pre{
+	color:#eee;
+	background-color:rgba(0,0,0,.4);
+	border-color:transparent;
+}
+
+.fc-state-default {
+    color: #d7d7d7;
+    background-color: rgba(255,255,255,.08);
+    border-color: transparent;
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+	box-shadow: none;
+}
+
+.fc-state-hover {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+	box-shadow:none;
+}
+
+.fc-state-active {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-color: rgba(255,255,255,.25);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
 
 .popover.in {
     opacity: .9;
@@ -506,75 +585,9 @@ ul.qualities li.selected .quality-label{
     color: white;
 }
 
-/* calendar list */
-
 .fc-unthemed .fc-list-heading td {
-    background-color: rgba(255,255,255,.2);
+    background-color: transparent;
     color: white;
 }
 
-.add-thingy > div > .btn-default,
-.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle {
-    color: var(--color-White);
-    background-color: var(--color-Grey);
-    border-color: var(--color-White);
-    outline-style: none;
-}
 
-.add-thingy > div > .btn-default:hover,
-.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
-    color: var(--color-DarkBG);
-    background-color: var(--color-White);
-    border-color: var(--color-White);
-    outline-style: none;
-}
-.fc-state-default {
-    color: #d7d7d7;
-    background-color: rgba(255,255,255,.08);
-    border-color: transparent;
-    outline-style: none;
-    background-image: none;
-    text-shadow: none;
-}
-
-.fc-state-hover {
-    color: white;
-    background-color: rgba(255,255,255,.25);
-    border-color: rgba(255,255,255,.25);
-    outline-style: none;
-    background-image: none;
-    text-shadow: none;
-}
-
-.fc-state-active {
-    color: white;
-    background-color: rgba(255,255,255,.25);
-    border-color: rgba(255,255,255,.25);
-    outline-style: none;
-    background-image: none;
-    text-shadow: none;
-}
-.modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
-    color: #d7d7d7;
-    background-color: rgba(255,255,255,.08);
-    border-color: transparent;
-    outline-style: none;
-}
-
-.modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
-    color: white;
-    background-color: rgba(255,255,255,.25);
-    border-color: rgba(255,255,255,.25);
-    outline-style: none;
-}
-.modal-footer > button:active:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
-    color: white;
-    background-color: rgba(255,255,255,.25);
-    border-color: rgba(255,255,255,.25);
-    outline-style: none;
-}
-pre{
-	color:#eee;
-	background-color:rgba(0,0,0,.4);
-	border-color:transparent;
-}
