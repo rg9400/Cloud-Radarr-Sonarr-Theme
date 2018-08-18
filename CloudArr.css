@@ -147,11 +147,11 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	border-top:none;
 	border-bottom:none;
 }
-.label-primary{
+.label-primary, .series-info .row a.label-info{
 	background-color:rgba(255,255,255,.25);
 	color: #eee;
 }
-.label-primary[href]:hover,.label-primary[href]:focus{
+.label-primary[href]:hover,.label-primary[href]:focus, .series-info .row a.label-info:hover, .series-info .row a.label-info:focus{
 	background-color: #cc7b19;
 	color: white;
 }
@@ -303,7 +303,7 @@ select option {
 .open > .dropdown-toggle.btn-primary:focus,
 .btn-primary:active.focus,
 .btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary.focus , .toggle input:first-of-type:checked~.slide-button, .toggle input:first-of-type:checked~.slide-button.btn-warning{
+.open > .dropdown-toggle.btn-primary.focus , .toggle input:first-of-type:checked~.slide-button, .toggle input:first-of-type:checked~.slide-button.btn-warning, .toggle input:first-of-type:checked~.slide-button.btn-danger{
   color: #fff;
   background-color: #cc7b19;
   box-shadow: inset 0 1px 0 #e7993b;
@@ -459,8 +459,8 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
 	color:#d7d7d7;
-	-webkit-box-shadow: 3px 3px 0px black;
-	box-shadow:3px 3px 0px black;
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
 	opacity:1;
 }
 .movie-page-header, .series-page-header{
@@ -474,8 +474,8 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
 	color:#d7d7d7;
-	-webkit-box-shadow: 3px 3px 0px black;
-	box-shadow:3px 3px 0px black;
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
 	opacity:1;
 }
 .backdrop .navbar-nzbdrone{
@@ -601,64 +601,29 @@ pre{
 .popover.right > .arrow:after {
     border-right-color: #000;
 }
-.label-info, .progress-bar {
+.label-info, .progress-bar , .badge-primary, .label.protocol-usenet{
     border-color: transparent;
-    background-color: rgba(51,122,183,.95);
-	color: #eee;
-}
-.calendar .premiere{
-    border-color: transparent;
-    background-color: rgba(51,122,183,.95);
+    background-color: rgba(51,122,183,.5);
 	color: #d7d7d7;
-	font-weight:400;
 }
-.label-success, .progress-bar-success, .badge-success{
+.label-success, .progress-bar-success, .badge-success, .label.protocol-torrent{
     border-color: transparent;
-    background-color: rgba(92,182,92,.95);
+    background-color: rgba(25, 255, 0, .15);
     color: #d7d7d7;
 }
-.calendar .success{
-    border-color: transparent;
-    background-color: rgba(92,182,92,.95);
-    color: #d7d7d7;
-	font-weight:400;
-}
-.event .success{
-	border-color: rgba(92,182,92,.95);
-}
-.progress-bar-gray , .label-default{
+ .label-default,.progress-bar-gray {
     border-color: transparent;
     background-color: rgba(255,255,255,.08);
 	background-image: none;
 	color: #d7d7d7;
 }
-.calendar .primary{
-	color:#d7d7d7;
-	background-color:#cc7b19;
-	border-color:transparent;
-	font-weight:400;
-}
-.badge-primary{
+ .label-danger,.progress-bar-danger, .badge-danger{
     border-color: transparent;
-    background-color: rgba(51,122,183,.95);
+    background-color: rgba(171, 0, 0, .50);
     color: #d7d7d7;
-}
-.event .primary{
-	border-color: #cc7b19;
-}
-.progress-bar-danger, .label-danger, .badge-danger{
-    border-color: transparent;
-    background-color: rgba(217,83,79,.95);
-    color: #d7d7d7;
-}
-.calendar .danger{
-    border-color: transparent;
-    background-color: rgba(217,83,79,.95);
-    color: #d7d7d7;
-	font-weight:400
 }
 .label-warning, .progress-bar-warning, .badge-warning {
-    background-color: rgba(223,105,26,.95);
+    background-color: rgba(223,105,26,.8);
 }
 .alert-info, .alert-warning {
     background-color: rgba(0,0,0,.3);
@@ -680,6 +645,23 @@ pre{
 .fc-title {
     color: #d7d7d7;
 }
+.fc-title:hover {
+    color: white;
+}
+.fc-event{
+	border-radius:0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 1px;
+}
+.fc-content{
+	padding:2px;
+}
+.fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-popover .fc-header{
+	background-color: rgba(0,0,0,.3);
+	border-color:transparent;
+}
 .calendar th {
     background-color: transparent;
 	border-color: transparent;
@@ -687,48 +669,101 @@ pre{
 }
 .calendar td {
 	border-color:transparent;
+	background-color: rgba(0,0,0,0.08);
 }
 .calendar tr{
-	background-color:transparent;
+	background-color:transparent !important;
 }
-.fc-day.fc-today.fc-state-highlight,
-.fc-day-number.fc-today.fc-state-highlight,
-.fc-day-top.fc-today.fc-state-highlight {
-    background-color: rgba(255,255,255,.08);
-    color: #f9be03;
+.fc-widget-content {
+    border-color: rgba(255,255,255,.08)!important;
 }
-::-webkit-scrollbar-corner {
-    background-color: rgba(0, 0, 0, .3);
-}
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    background: hsla(0,0%,100%,.08);
-
-}
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    background-color: rgba(0, 0, 0, .3);
+.fc-unthemed .fc-today{
+    background-color: rgba(255,255,255,.08) !important;
+    color: #f9be03 !important;
 }
 .manual-import-modal .manual-import-error{
 	background-color: transparent;
 }
 .season .label:first-child{
-	background-color:rgba(255,255,255,.08);
+	background-color:rgba(255,255,255,.25);
 	border-color:transparent;
-	color: #eee;
+	color: #d7d7d7;
 }
 .season.season-all .label:last-child{
     border-color: transparent;
-    background-color: rgba(92,182,92,.95);
-    color: #eee;
+    background-color: rgba(25, 255, 0, .15);
+    color: #d7d7d7;
 }
 .season .label:last-child{
     border-color: transparent;
-    background-color: rgba(217,83,79,.95);
-    color: #eee;
+    background-color: rgba(171, 0, 0, .50);
+    color: #d7d7d7;
 }
-.series-not-monitored .episode-monitored, .series-not-monitored .season-monitored{
-	color:
+.calendar .premiere{
+    border: none;
+    background-color: rgba(51,122,183,.5);
+	color: #d7d7d7;
+	font-weight:400;
+}
+.event .premiere{
+	border-color: rgba(51,122,183,.5);
+}
+.calendar .success{
+    border: none;
+    background-color: rgba(25, 255, 0, .15);
+    color: #d7d7d7;
+	font-weight:400;
+}
+.event .success{
+	border-color: rgba(25, 255, 0, .15);
+}
+.calendar .primary{
+	color:#d7d7d7;
+	background-color:#cc7b19;
+	border: none;
+	font-weight:400;
+}
+.event .primary{
+	border-color: #cc7b19;
+}
+.calendar .warning {
+    border: none;
+    background-color: rgba(223,105,26,.95);
+    color: #d7d7d7;
+	font-weight:400
+}
+.event .warning{
+	border-color: rgba(223,105,26,.95);
+}
+.calendar .danger{
+    border: none;
+    background-color: rgba(171, 0, 0, .50);
+    color: #d7d7d7;
+	font-weight:400
+}
+.event .danger{
+	border-color: rgba(171, 0, 0, .50);
+}
+.calendar .purple{
+	color:#d7d7d7;
+	background-color:#cc7b19;
+	border:none;
+	font-weight:400;
+}
+.event .purple{
+	border-color: #cc7b19;
+}
+.calendar .unmonitored{
+	color:#d7d7d7;
+	background-color:rgba(0,0,0,.3);
+	border:none;
+	font-weight:400;
+}
+.event .unmonitored{
+	border-color: rgba(0,0,0,.3);
+}
+@media screen and (max-width: 767px){
+	.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
+		white-space: normal;
+	}	
 }
