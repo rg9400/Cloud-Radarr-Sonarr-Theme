@@ -758,7 +758,7 @@ pre{
 	font-weight:400;
 }
 .event .primary{
-	border-color: #cc7b19;
+	border-color: rgba(51,122,183,.55);
 }
 .calendar .warning {
     border: none;
