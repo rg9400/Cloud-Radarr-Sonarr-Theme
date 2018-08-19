@@ -24,7 +24,6 @@ Radarr and Sonarr don't give you an easy way to add custom css, so you will need
 
 <img src="/Screenshots/CloudArrSS7.png"></img>
 <img src="/Screenshots/CloudArrSS1.png"></img>
-<img src="/Screenshots/CloudArrSS2.png"></img>
 <img src="/Screenshots/CloudArrSS3.png"></img>
 <img src="/Screenshots/CloudArrSS4.png"></img>
 <img src="/Screenshots/CloudArrSS5.png"></img>
