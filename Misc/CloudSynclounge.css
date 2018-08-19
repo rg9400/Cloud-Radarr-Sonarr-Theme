@@ -1,0 +1,95 @@
+main, html{
+	background-image: url("https://rhaegar.net/plugins/images/background/blur-noise.png"), url("https://rhaegar.net/plugins/images/background/blur-light.png");
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+	min-height: 100%;
+	height: auto;
+}
+.v-navigation-drawer{
+	background-image: url("https://rhaegar.net/plugins/images/background/blur-noise.png"), url("https://rhaegar.net/plugins/images/background/blur-light.png") !important;
+	background-repeat: repeat, no-repeat !important;
+	background-attachment: fixed, fixed !important;
+	background-position: center center, center center !important;
+	background-size: auto, cover !important;
+	-webkit-background-size: auto, cover !important;
+	-moz-background-size: auto, cover !important;
+	-o-background-size: auto, cover !important;
+	background-color: rgba(0,0,0,.0) !important;
+	color:#d7d7d7 !important;
+}
+a:focus, a:hover {
+	color: #f9be03;
+}
+a{
+	color: #d7d7d7;
+}
+.v-toolbar {
+    background: rgba(0,0,0,.4) !important;
+	box-shadow: none;
+}
+.application .theme--dark.v-list, .theme--dark .v-list {
+    background: rgba(255,255,255,.05) !important;
+}
+
+.application .theme--dark.v-card, .theme--dark .v-card{
+    background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+}
+
+div.flex.pa-2.xs12.md3> .v-card{
+	background-color: rgba(0,0,0,.3) !important;
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
+}
+
+div.flex.text-xs-center.pa-2.xs12{
+	background-color: transparent !important;
+}
+
+.flex.pa-4.xs12.lg8, .pa-4.v-card{
+	background-color: transparent !important;
+	box-shadow: none;
+}
+.v-list__tile{
+	color: #d7d7d7;
+	transition: none;
+}
+.application .theme--dark.v-list .v-list__group__header:hover, .application .theme--dark.v-list .v-list__tile--highlighted, .application .theme--dark.v-list .v-list__tile--link:hover, .theme--dark .v-list .v-list__group__header:hover, .theme--dark .v-list .v-list__tile--highlighted, .theme--dark .v-list .v-list__tile--link:hover{
+    background: rgba(255,255,255,.08);
+    transition: none;
+    color: white;
+}
+.v-list__tile__sub-title, .v-list__tile__title{
+	transition: none;
+}
+.v-btn__content{
+	color: #d7d7d7;
+	transition: none;
+}
+.v-btn--active, .v-btn:focus, .v-btn:hover{
+    background-color: rgba(255,255,255,.08);
+    color: transparent;
+}
+.v-btn__content:focus,.v-btn__content:hover,.v-btn__content:active{
+	color: white;
+	transition: none;
+}
+.v-list--dense{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
