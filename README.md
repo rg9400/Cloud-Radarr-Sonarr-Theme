@@ -1,6 +1,6 @@
 # Cloud-Radarr-Sonarr-Theme
 <h2>Cloud CSS for Radarr and Sonarr</h2>
-Credits to <a href="https://github.com/iFelix18/Darkerrr">Darkerr</a>, <a href="https://github.com/gilbN">GilbN</a>, and <a href="https://github.com/leram84">Leram</a> whose work was the base and inspiration for this. 
+Credits to <a href="https://github.com/iFelix18/Darkerr">Darkerr</a>, <a href="https://github.com/gilbN">GilbN</a>, and <a href="https://github.com/leram84">Leram</a> whose work was the base and inspiration for this. 
 
  ### Setup
 <details><summary>Expand</summary>
