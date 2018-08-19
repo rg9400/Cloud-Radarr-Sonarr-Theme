@@ -672,6 +672,10 @@ pre{
     background-color: rgba(255,255,255,.08);
     color: white;
 }
+.fc-list-item-title a[href]:hover{
+	color: white;
+	text-decoration:none;
+}
 .calendar th {
     background-color: transparent;
 	border-color: transparent;
@@ -738,12 +742,12 @@ pre{
 }
 .calendar .warning {
     border: none;
-    background-color: rgba(223,105,26,.95);
+    background-color: rgba(223,105,26,.8);
     color: #d7d7d7;
 	font-weight:400
 }
 .event .warning{
-	border-color: rgba(223,105,26,.95);
+	border-color: rgba(223,105,26,.8);
 }
 .calendar .danger{
     border: none;
