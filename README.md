@@ -5,7 +5,7 @@ Credits to <a href="https://github.com/iFelix18/Darkerrr">Darkerr</a>, <a href="
  ### Setup
 <details><summary>Expand</summary>
 <p>
-Radarr and Sonarr don't give you an easy way to add custom css, so you will need to insert it with your reverse proxy. The below is an example that you can inside your NGINX Tau location block to insert the CSS when accessing via your domain (not locally). You need the subfilter module for it to work. If you don't use nginx or don't have that module, I don't know enough to help out.
+Radarr and Sonarr don't give you an easy way to add custom css, so you will need to insert it with your reverse proxy. The below is an example that you can inside your NGINX Sonarr and Radarr location blocks to insert the CSS when accessing via your domain (not locally). You need the subfilter module for it to work. If you don't use nginx or don't have that module, I don't know enough to help out.
 
 ```nginx		
 			proxy_set_header Accept-Encoding "";
