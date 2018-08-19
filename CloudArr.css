@@ -8,6 +8,8 @@ body{
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
+	min-height: 100%;
+	height: auto;
 	color:#d7d7d7;
 }
 html{
@@ -46,6 +48,9 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 }
 #add-series-screen .hint{
 	color: #aaa;
+}
+#add-movies-screen .search-item a, #add-series-screen .search-item a{
+	color: #d7d7d7;
 }
 .movie-item, .series-item{
 	background-color: rgba(0,0,0,.3);
@@ -116,6 +121,8 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
+	min-height: 100%;
+	height: auto;
 	color:#d7d7d7;
 }
 .dropdown-menu > li > a , li.save-and-add{
@@ -140,12 +147,17 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
+	min-height: 100%;
+	height: auto;
 	color:#d7d7d7;
 }
 .modal-footer,.modal-body,.modal-header{
 	background-color: transparent;
 	border-top:none;
 	border-bottom:none;
+}
+.modal-body{
+	overflow: auto;
 }
 .label-primary, .series-info .row a.label-info{
 	background-color:rgba(255,255,255,.25);
@@ -427,6 +439,8 @@ legend{
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
+	min-height: 100%;
+	height: auto;
 	color:#d7d7d7;
 	opacity:1
 }
@@ -459,6 +473,8 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
 	color:#d7d7d7;
+	min-height: 100%;
+	height: auto;
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
 	opacity:1;
@@ -474,6 +490,8 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
 	color:#d7d7d7;
+	min-height: 100%;
+	height: auto;
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
 	opacity:1;
@@ -489,6 +507,8 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	-o-background-size: auto, cover;
 	background-color: rgba(0,0,0,.0);
 	color:#d7d7d7;
+	min-height: 100%;
+	height: auto;
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
 	opacity:1;
@@ -715,25 +735,25 @@ pre{
 }
 .calendar .premiere{
     border: none;
-    background-color: rgba(51,122,183,.5);
+    background-color: rgba(51,122,183,.55);
 	color: #d7d7d7;
 	font-weight:400;
 }
 .event .premiere{
-	border-color: rgba(51,122,183,.5);
+	border-color: rgba(51,122,183, 1);
 }
 .calendar .success{
     border: none;
-    background-color: rgba(25, 255, 0, .15);
+    background-color: rgba(50, 200, 0, .15);
     color: #d7d7d7;
 	font-weight:400;
 }
 .event .success{
-	border-color: rgba(25, 255, 0, .15);
+	border-color: rgba(25, 255, 0, .35);
 }
 .calendar .primary{
 	color:#d7d7d7;
-	background-color:#cc7b19;
+	background-color:rgba(51,122,183,.15);
 	border: none;
 	font-weight:400;
 }
@@ -742,16 +762,16 @@ pre{
 }
 .calendar .warning {
     border: none;
-    background-color: rgba(223,105,26,.8);
+    background-color: #cc7b19;
     color: #d7d7d7;
 	font-weight:400
 }
 .event .warning{
-	border-color: rgba(223,105,26,.8);
+	border-color: #cc7b19;
 }
 .calendar .danger{
     border: none;
-    background-color: rgba(171, 0, 0, .50);
+    background-color: rgba(171, 0, 0, .3);
     color: #d7d7d7;
 	font-weight:400
 }
@@ -760,21 +780,21 @@ pre{
 }
 .calendar .purple{
 	color:#d7d7d7;
-	background-color:#cc7b19;
+	background-color:rgba(75,0,130, .15);
 	border:none;
 	font-weight:400;
 }
 .event .purple{
-	border-color: #cc7b19;
+	border-color: rgba(75,0,130, .5);
 }
 .calendar .unmonitored{
 	color:#d7d7d7;
-	background-color:rgba(0,0,0,.3);
+	background-color:rgba(0,0,0,.2);
 	border:none;
 	font-weight:400;
 }
 .event .unmonitored{
-	border-color: rgba(0,0,0,.3);
+	border-color: rgba(0,0,0,.5);
 }
 @media screen and (max-width: 767px){
 	.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
