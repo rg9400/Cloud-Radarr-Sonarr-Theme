@@ -15,6 +15,14 @@ Radarr and Sonarr give you an easy way to add custom css, so you will need to in
  ### Screenshots
 <details><summary>Expand</summary>
 <p>
-Coming Soon
+
+<img src="https://cdn.rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/Screenshots/CloudArrSS7.png"></img>
+<img src="https://cdn.rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/Screenshots/CloudArrSS1.png"></img>
+<img src="https://cdn.rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/Screenshots/CloudArrSS2.png"></img>
+<img src="https://cdn.rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/Screenshots/CloudArrSS3.png"></img>
+<img src="https://cdn.rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/Screenshots/CloudArrSS4.png"></img>
+<img src="https://cdn.rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/Screenshots/CloudArrSS5.png"></img>
+<img src="https://cdn.rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/Screenshots/CloudArrSS6.png"></img>
+
 </p>
 </details>
