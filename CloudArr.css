@@ -156,9 +156,6 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	border-top:none;
 	border-bottom:none;
 }
-.modal-body{
-	overflow: auto;
-}
 .label-primary, .series-info .row a.label-info{
 	background-color:rgba(255,255,255,.25);
 	color: #eee;
@@ -799,5 +796,8 @@ pre{
 @media screen and (max-width: 767px){
 	.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
 		white-space: normal;
-	}	
+	}
+	.modal-body{
+	overflow: auto;
+	}
 }
