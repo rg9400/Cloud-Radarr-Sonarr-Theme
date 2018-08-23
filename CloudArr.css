@@ -230,6 +230,9 @@ select option {
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
 	background-color: rgba(0,0,0,.3);
 }
+.edit-series-modal .twitter-typeahead .form-control[disabled]{
+	background-color: rgba(255,255,255,.08)	
+}
 .input-group .twitter-typeahead:last-child .tt-input, .root-folders-modal .input-group .form-control{
 	border-top-left-radius:0px;
 	border-bottom-left-radius:0px;
