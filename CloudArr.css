@@ -277,7 +277,7 @@ select option {
 .btn.focus, .btn:focus, .btn:hover{
 	color:white;
 }
-.btn-default{
+.btn-default,.btn.x-search-back{
 	background-color: rgba(255,255,255,.08);
 	color: #d7d7d7;
 	border-color: transparent;
@@ -350,7 +350,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-warning.focus, .btn-warning:focus{
 	border-color:transparent;
 }
-.btn-default:hover ,.btn-default.active,.btn-default.active:hover, .btn-default:active:hover , .btn-default.focus.active, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default , .btn-default.focus, .btn-default:focus, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+.btn-default:hover ,.btn-default.active,.btn-default.active:hover, .btn-default:active:hover , .btn-default.focus.active, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default , .btn-default.focus, .btn-default:focus, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover,.btn.x-search-back:hover,.btn.x-search-back:focus{
 	background-color: rgba(255,255,255,.25);
 	border-color: rgba(255,255,255,.25);
 	color: white;
