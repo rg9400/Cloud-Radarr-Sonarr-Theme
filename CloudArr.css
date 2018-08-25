@@ -796,6 +796,11 @@ pre{
 .event .unmonitored{
 	border-color: rgba(0,0,0,.5);
 }
+.alert-danger {
+    background-color: rgba(171, 0, 0, .50);
+    border-color: transparent;
+    color: #d7d7d7;
+}
 @media screen and (max-width: 767px){
 	.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
 		white-space: normal;
