@@ -75,11 +75,11 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
 }
-.series-posters .movie-posters-item , .series-posters .series-posters-item{
+.movie-posters .movie-posters-item , .series-posters .series-posters-item{
 	background-color:transparent;
 	box-shadow: none;
 }
-.series-posters .movie-posters-item .labels :hover{
+.movie-posters .movie-posters-item .labels :hover{
 	cursor: pointer;
 }
 .series-posters .series-poster-container .series-controls, .series-posters .series-poster-container .hidden-title, .series-posters .movie-poster-container .movie-controls, .series-posters .movie-poster-container .hidden-title {
