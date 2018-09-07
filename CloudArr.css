@@ -633,7 +633,7 @@ pre{
 }
  .label-default,.progress-bar-gray {
     border-color: transparent;
-    background-color: rgba(255,255,255,.08);
+    background-color: rgba(70,130,180,.6);
 	background-image: none;
 	color: #d7d7d7;
 }
