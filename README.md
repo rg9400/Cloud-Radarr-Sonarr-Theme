@@ -11,7 +11,7 @@ Radarr and Sonarr don't give you an easy way to add custom css, so you will need
 			proxy_set_header Accept-Encoding "";
 			sub_filter
 			'</head>'
-			'<link rel="stylesheet" type="text/css" href="https://rawgit.com/rg9400/Cloud-Radarr-Sonarr-Theme/master/CloudArr.css">
+			'<link rel="stylesheet" type="text/css" href="https://rg9400.github.io/CloudThemes/CloudArr.css">
 			</head>';
 			sub_filter_once on;
  ```
