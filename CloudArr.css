@@ -112,7 +112,7 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	color: white;
 }
 .dropdown-menu {
-    background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+    background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
 	background-repeat: repeat, no-repeat; 
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -430,7 +430,7 @@ legend{
 	color:#d7d7d7;
 }
 .search .tt-dropdown-menu{
-    background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+    background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
 	background-repeat: repeat, no-repeat; 
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -463,7 +463,7 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	border-color:transparent;
 }
 .movie-tabs-card, .series-season{
-	background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
+	background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
 	background-repeat: repeat, no-repeat; 
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -480,7 +480,7 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	opacity:1;
 }
 .movie-page-header, .series-page-header{
-	background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
+	background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
 	background-repeat: repeat, no-repeat; 
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -497,7 +497,7 @@ ul.messenger-theme-flat, ul.messenger-theme-flat .messenger-message{
 	opacity:1;
 }
 .backdrop .navbar-nzbdrone{
-	background-image: url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://rawgit.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
+	background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-light.png");
 	background-repeat: repeat, no-repeat; 
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
