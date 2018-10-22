@@ -7,16 +7,9 @@ body{
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
-	background-color: rgba(0,0,0,.0);
-	min-height: 100%;
-	height: auto;
-	color:#d7d7d7;
+	color:#d7d7d7 !important;
 }
-html{
-	min-height: 100%;
-	height: auto;
-}
-a:focus, a:hover , .episode-title-cell:focus, .episode-title-cell:hover{
+a:focus, a:hover , .episode-title-cell:focus, .episode-title-cell:hover, .Link-to-1jNxQ:hover, .EpisodeTitleLink-link-1ZCTO:hover{
 	color: #f9be03;
 	text-decoration:none;
 }
@@ -59,11 +52,26 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	-webkit-box-shadow: 3px 3px 10px black;
 	box-shadow:3px 3px 10px black;
 }
-@media (min-width: 768px) { 
-	.movie-item, .series-item, .backdrop .navbar-nzbdrone, .series-posters .movie-poster-container, #add-movies-screen .new-movies .search-item , #add-series-screen .new-series .search-item, .thingy, .add-thingy, .metadata-item{
+.SeriesDetailsSeason-episodes-14Ujq{
+	border-color: transparent;
+}
+@media screen and (min-width: 767px){ 
+	.movie-item, .SeriesDetailsSeason-season-1YnGm, .series-item, .backdrop .navbar-nzbdrone,
+	.series-posters .movie-poster-container, #add-movies-screen .new-movies .search-item , #add-series-screen .new-series .search-item, .thingy,
+	.add-thingy, .metadata-item, .Card-card-SvrkG, .SeriesIndexOverview-content-3ZT3A,
+	.AddNewSeriesSearchResult-searchResult-30ozE, .AddNewArtistSearchResult-searchResult-3_U8e,
+	.ArtistDetailsSeason-albumType-23-Z4, .ArtistIndexOverview-content-3zZhb,
+	.AlbumDetailsMedium-medium-3pu-U{
 		-webkit-box-shadow: 3px 5px 15px black;
 		box-shadow:3px 5px 15px black;
 	}
+}
+.SeriesDetailsSeason-season-1YnGm, .ArtistDetailsSeason-albumType-23-Z4,
+.AlbumDetailsMedium-medium-3pu-U{
+	border-color:transparent;
+	background-color: rgba(0,0,0,.3);
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow:3px 3px 10px black;
 }
 #scroll-up{
 	color: #d7d7d7;
@@ -88,7 +96,7 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	opacity: 1;
 	cursor:default;
 }
-#add-movies-screen .new-movies .search-item, #add-series-screen .existing-series, #add-series-screen .new-series .search-item, .thingy, .metadata-item, .add-thingy{
+#add-movies-screen .new-movies .search-item, #add-series-screen .existing-series, #add-series-screen .new-series .search-item, .thingy, .metadata-item, .add-thingy, .Card-card-SvrkG{
 	background-color:rgba(0,0,0,.3);
 	color: #d7d7d7;
 	-webkit-box-shadow: 3px 3px 10px black;
@@ -137,7 +145,7 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	box-shadow:none;
 	color: #d7d7d7;
 }
-.modal-content {
+.modal-content, .ModalContent-modalContent-1B9AX {
     background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
@@ -151,7 +159,7 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	height: auto;
 	color:#d7d7d7;
 }
-.modal-footer,.modal-body,.modal-header{
+.modal-footer,.modal-body,.modal-header, .ModalHeader-modalHeader-P3MTG, .ModalFooter-modalFooter-3izCM{
 	background-color: transparent;
 	border-top:none;
 	border-bottom:none;
@@ -160,11 +168,16 @@ a , .episode-title-cell, .movie-item .movie-info-links a{
 	background-color:rgba(255,255,255,.25);
 	color: #eee;
 }
+.Label-inverse-1-0Ah{
+	background-color:rgba(255,255,255,.25);
+	color: #d7d7d7;
+	border-color: transparent;
+}
 .label-primary[href]:hover,.label-primary[href]:focus, .series-info .row a.label-info:hover, .series-info .row a.label-info:focus{
 	background-color: #cc7b19;
 	color: white;
 }
-table thead  {
+table thead, .VirtualTableHeaderCell-headerCell-15Xbl {
 	background-color:rgba(0,0,0,.2);
 	color: #d7d7d7;
 }
@@ -176,14 +189,14 @@ th.sortable:hover{
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 	border-color:transparent;
 }
-tbody>tr:nth-of-type(odd){
+tbody>tr:nth-of-type(odd), .VirtualTableRow-row-2osBd:nth-of-type(odd){
 	background-color: rgba(255,255,255,0.01);
 }
-tbody>tr:nth-of-type(even){
+tbody>tr:nth-of-type(even), .VirtualTableRow-row-2osBd:nth-of-type(even){
 	background-color: rgba(255,255,255,0.1);
 }
-.table-hover > tbody > tr:hover {
-    background-color: rgba(255,255,255,.15);
+.table-hover > tbody > tr:hover, .TableRow-row-2tPLX:hover, .VirtualTableRow-row-2osBd:hover {
+    background-color: rgba(0,0,0,.3);
 }
 select.form-control,.form-control, .bootstrap-tagsinput, div.form-control .selectize-input, select, .react-selectize.bootstrap3.root-node .react-selectize-control{
 	background-color: rgba(255,255,255,.08);
@@ -195,7 +208,7 @@ select.form-control,.form-control, .bootstrap-tagsinput, div.form-control .selec
 	box-shadow:none;
 }
 .control-panel{
-	background-color:rgba(0,0,0,.91);
+	background-color:rgba(0,0,0,.3);
 	box-shadow:none;
 }
 .react-selectize.root-node .simple-value, .selectize-control.multi .selectize-input > div {
@@ -209,7 +222,7 @@ select option {
 	background-color: rgba(255,255,255,.15);
 	color: #d7d7d7;
 }
-.progress {
+.progress, .SeriesIndexProgressBar-progress-3ZC7J, .ProgressBar-container-1VTgk {
 	background-color: rgba(255,255,255,.08);
 }
 .progress-bar-purple{
@@ -222,7 +235,7 @@ select option {
 .twitter-typeahead .tt-hint{
 	color: #d7d7d7;
 }
-.root-folders-modal .input-group .form-control,.input-group .twitter-typeahead:first-child .tt-input,.input-group.input-group-lg.add-series-search > .input-group-addon, .input-group.input-group-lg.add-movies-search > .input-group-addon,.search .input-group .input-group-addon, .search .input-group input, #add-series-screen .add-series-search > input.form-control.x-series-search, #add-movies-screen .add-movies-search > input.form-control.x-movies-search {
+.root-folders-modal .input-group .form-control,.input-group .twitter-typeahead:first-child .tt-input,.input-group.input-group-lg.add-series-search > .input-group-addon, .input-group.input-group-lg.add-movies-search > .input-group-addon,.search .input-group .input-group-addon, .search .input-group input, #add-series-screen .add-series-search > input.form-control.x-series-search, #add-movies-screen .add-movies-search > input.form-control.x-movies-search{
 	background-color: rgba(255,255,255,.08);
 	border-color: transparent;
 	color: #d7d7d7;
@@ -277,7 +290,7 @@ select option {
 .btn.focus, .btn:focus, .btn:hover{
 	color:white;
 }
-.btn-default,.btn.x-search-back{
+.btn-default,.btn.x-search-back, .Button-default-1X0nf{
 	background-color: rgba(255,255,255,.08);
 	color: #d7d7d7;
 	border-color: transparent;
@@ -286,26 +299,26 @@ select option {
 	background-color: #cc7b19;
 	border-color:transparent;
 }
-.btn-primary, .btn.btn-lg.btn-block.x-search-auto{
+.btn-primary, .btn.btn-lg.btn-block.x-search-auto, .Button-primary-2HoDb{
   color: #fff;
   background-color: #cc7b19;
   box-shadow: inset 0 1px 0 #e7993b;
   border-color:transparent;
 }
-.btn-primary:focus,
+.btn-primary:focus, .Button-primary-2HoDb:focus,
 .btn-primary.focus , .btn.btn-lg.btn-block.x-search-auto:focus, .btn.btn-lg.btn-block.x-search-auto.focus{
   color: #fff;
   background-color: #eb8600;
   border-color: #eb8600;
 }
-.btn-primary:hover, .btn.btn-lg.btn-block.x-search-auto:hover {
+.btn-primary:hover, .btn.btn-lg.btn-block.x-search-auto:hover, .Button-primary-2HoDb:hover {
   color: #fff !important;
   background-color: #e59029 !important;
   box-shadow: inset 0 1px 0 #ebac60 !important;
   border-color: #e59029;
 }
 .btn-primary:active,
-.btn-primary.active,
+.btn-primary.active, .Button-primary-2HoDb.active, .Button-primary-2HoDb:active,
 .open > .dropdown-toggle.btn-primary,
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -350,7 +363,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-warning.focus, .btn-warning:focus{
 	border-color:transparent;
 }
-.btn-default:hover ,.btn-default.active,.btn-default.active:hover, .btn-default:active:hover , .btn-default.focus.active, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default , .btn-default.focus, .btn-default:focus, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover,.btn.x-search-back:hover,.btn.x-search-back:focus{
+.btn-default:hover, .Button-default-1X0nf:hover, .Button-default-1X0nf:active, .btn-default.active,.btn-default.active:hover, .btn-default:active:hover , .btn-default.focus.active, .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default , .btn-default.focus, .btn-default:focus, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover,.btn.x-search-back:hover,.btn.x-search-back:focus{
 	background-color: rgba(255,255,255,.25);
 	border-color: rgba(255,255,255,.25);
 	color: white;
@@ -623,17 +636,17 @@ pre{
 }
 .label-info, .progress-bar , .badge-primary, .label.protocol-usenet{
     border-color: transparent;
-    background-color: rgba(51,122,183,.5);
+    background-color: rgba(51,122,183,.6);
 	color: #d7d7d7;
 }
 .label-success, .progress-bar-success, .badge-success, .label.protocol-torrent{
     border-color: transparent;
-    background-color: rgba(25, 255, 0, .15);
+    background-color: rgba(25,150,50,.5);
     color: #d7d7d7;
 }
- .label-default,.progress-bar-gray {
+ .label-default,.progress-bar-gray{
     border-color: transparent;
-    background-color: rgba(70,130,180,.6);
+    background-color: rgba(70,130,180,.2);
 	background-image: none;
 	color: #d7d7d7;
 }
@@ -642,10 +655,12 @@ pre{
     background-color: rgba(171, 0, 0, .50);
     color: #d7d7d7;
 }
-.label-warning, .progress-bar-warning, .badge-warning {
-    background-color: rgba(223,105,26,.8);
+.label-warning, .progress-bar-warning, .badge-warning{
+	background-color: rgba(223,105,26,.8);
+	border-color: transparent;
+	color: #d7d7d7;
 }
-.alert-info, .alert-warning {
+.alert-info, .alert-warning, .Alert-info-1XFI_, .Alert-warning-ZYmxG{
     background-color: rgba(0,0,0,.3);
     border-color: transparent;
     color: #d7d7d7;
@@ -796,7 +811,7 @@ pre{
 .event .unmonitored{
 	border-color: rgba(0,0,0,.5);
 }
-.alert-danger {
+.alert-danger{
     background-color: rgba(171, 0, 0, .50);
     border-color: transparent;
     color: #d7d7d7;
@@ -808,4 +823,575 @@ pre{
 	.modal-body{
 	overflow: auto;
 	}
+}
+@media screen and (max-width: 767px){
+	.PageSidebar-sidebar-2UXc0{
+		background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+		background-repeat: repeat, no-repeat; 
+		background-attachment: fixed, fixed;
+		background-position: center center, center center;
+		background-size: auto, cover;
+		-webkit-background-size: auto, cover;
+		-moz-background-size: auto, cover;
+		-o-background-size: auto, cover;
+		background-color: rgba(0,0,0,.0);
+		color:#d7d7d7;
+	}
+}
+.PageSidebar-sidebar-2UXc0{
+	background-color: rgba(0,0,0,.2);
+}
+.PageSidebar-sidebarContainer-2kLcI {
+	background: transparent;
+}
+.PageSidebarItem-isActiveParentLink-2qgS5 {
+    background-color: rgba(0,0,0,.15);
+}
+.PageSidebarItem-isActiveLink-1JpOZ {
+    color: #f9be03 !important;
+}
+.PageSidebarItem-isActiveItem-34xgs{
+	border-left: 3px solid rgba(255,255,255,.4);
+}
+.PageSidebarItem-link-2ron8{
+	color: #d7d7d7;
+	height: 60px;
+}
+.PageSidebarItem-link-2ron8:hover, .PageSidebarItem-link-2ron8:focus{
+	color: white;
+}
+.PageHeader-header-1lnFT{
+	background-color: rgba(0,0,0,.85);
+}
+.PageToolbar-toolbar-1oL_w{
+	background-color: rgba(0,0,0,.2);
+	color:#d7d7d7;
+	height:60px;
+}
+.PageSidebarItem-iconContainer-1TiQu{
+	margin-top: 8px;
+}
+.PageSidebarItem-childLink-2PUAE{
+	height: 45px !important;
+}
+.SeriesIndexPoster-title-1LWvk,.SeriesIndexPoster-nextAiring-2dTrg,
+.ArtistIndexPoster-title-3bXfu, .ArtistIndexBanner-title-3TKM6{
+	background-color: transparent;
+	color: #d7d7d7;
+}
+.Input-input-dS7Oc,.AddNewSeries-searchIconContainer-3iiEV,.AddNewSeries-clearLookupButton-2kg6j,
+.AddNewArtist-searchIconContainer-3iE_u{
+	background-color: rgba(255,255,255,.08);
+	border-color: transparent;
+	box-shadow: none;
+	color: #d7d7d7;
+}
+.FieldSet-legend-3mbvV{
+	color: white;
+}
+.Link-to-1jNxQ{
+	color: #d7d7d7;
+}
+.TableRowCell-cell-3hR4a{
+	border-top: none;
+}
+.IconButton-button-20Niq:hover{
+	color: white;
+}
+.PageContentFooter-contentFooter-1t6xx{
+	background-color: rgba(0,0,0,.2);
+	color:#d7d7d7;
+}
+.SeriesSearchInput-containerOpen-3CRkE .SeriesSearchInput-seriesContainer-3lxJI,
+.MenuContent-menuContent-e2UAN, .EnhancedSelectInput-options-rq1zN,
+.ArtistSearchInput-containerOpen-2N_Cb .ArtistSearchInput-artistContainer-3yVYN{
+	border-color:transparent;
+	background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+	box-shadow: 3px 3px 10px black;
+}
+.SeriesIndexPoster-content-9X0A1{
+	box-shadow: none;
+}
+.SeriesIndexOverview-content-3ZT3A, .AddNewSeriesSearchResult-searchResult-30ozE,
+.AddNewArtistSearchResult-searchResult-3_U8e, .ArtistIndexOverview-content-3zZhb{
+	background-color: rgba(0,0,0,.3);
+	-webkit-box-shadow: 3px 3px 10px black;
+	box-shadow: 3px 3px 10px black;
+	margin-right: 10px;
+}
+.Settings-summary-1BIsi{
+	color: #aaa;
+}
+.SeriesDetailsSeason-collapseButtonContainer-3XxzX,
+.ArtistDetailsSeason-collapseButtonContainer-3EuJ8, .AlbumDetailsMedium-collapseButtonContainer-2MSYO{
+	border-color: transparent;
+	background-color: transparent;
+}
+.LoadingIndicator-ripple-1264V{
+	border-color: #d7d7d7;
+}
+.SeriesIndexOverview-container-2zNbo:hover .SeriesIndexOverview-content-3ZT3A,
+.AddNewSeriesSearchResult-searchResult-30ozE:hover,
+.AddNewArtistSearchResult-searchResult-3_U8e:hover,
+.ArtistIndexOverview-container-3_iEh:hover .ArtistIndexOverview-content-3zZhb{
+	background-color: rgba(0,0,0,.1);
+}
+.ArtistDetailsSeason-albums-qd7y-, .AlbumDetailsMedium-tracks-1Y6uW{
+	border-top-color: transparent;
+}
+.TagInput-input-2UK6_{
+	background-color: transparent;
+}
+.FilterBuilderRow-filterRow-MAylC:hover{
+	background-color: transparent;
+}
+.CheckInput-primaryIsChecked-1hv3I {
+    border-color: transparent;
+    background-color: #cc7b19;
+}
+.PageToolbarButton-toolbarButton-3b5EM:hover, .MenuButton-menuButton-3cqRJ:hover{
+	color: white;
+}
+.Indexers-center-3HUez, .DownloadClients-center-30cx9,
+.QualityProfiles-center-3qTb_, .LanguageProfiles-center-18sh2,
+.Restrictions-center-3cS8T, .Notifications-center-13jM2,
+.MetadataProfiles-center-3V4Ro, .ImportLists-center-3IXCL{
+	border-color:transparent;
+	background-color: transparent;
+}
+.Label-danger-1rVtt.Label-outline-2ZP8n{
+	color: #d7d7d7;
+}
+.SeriesSearchInput-listItem-3BLmn:hover, .SeriesSearchInput-listItem-3BLmn:active,
+.SeriesSearchInput-listItem-3BLmn:focus, .SeriesSearchInput-highlighted-FnL2Y,
+.ArtistSearchInput-highlighted-3Rtd9{
+	background-color: rgba(255,255,255,.08);
+}
+.PageHeader-header-1lnFT{
+	color: #d7d7d7;
+}
+.PageHeaderActionsMenu-menuButton-2VX4Y:hover{
+	color: white;
+}
+.MenuItem-menuItem-211VP{
+	background-color: transparent;
+	color: #d7d7d7;
+}
+.MenuItem-menuItem-211VP:hover, .MenuItem-menuItem-211VP:active{
+	background-color: rgba(255,255,255,.08);
+	color: white;
+}
+.PageToolbarButton-label-13ZCD{
+	color: #aaa;
+}
+.ImportSeriesSelectSeries-content-2AQQa, .ImportArtistSelectArtist-content-15Mcv{
+	border-color:transparent;
+	background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+}
+.TagInput-containerOpen-2g0Wc .TagInput-suggestionsContainer-1vjHY, .PathInput-pathInputContainerOpen-27B9M .PathInput-pathContainer-4ZpPW{
+	background-color: rgba(0,0,0,.9);
+	border-color:transparent;
+	box-shadow: none;
+}
+.TagInput-suggestion-3jRkQ:hover, .PathInput-pathListItem-2KzqS:hover,
+.ImportSeriesSearchResult-series-wStU8:hover, .ImportArtistSearchResult-artist-IVs0T:hover,
+.PathInput-pathHighlighted-1hnUe, .TagInput-suggestionHighlighted-2Ejsk{
+	background-color: rgba(255,255,255,.08);
+}
+.EnhancedSelectInputOption-isSelected-3Tobc, .EnhancedSelectInputOption-option-24eyb:hover {
+    background-color: rgba(255,255,255,.08);
+}
+.FormLabel-isAdvanced-M766s, .FormInputHelpText-isWarning-3mnOx{
+	color: #cc7b19;
+}
+.LogsTableRow-warn-2q_pw{
+	color: #cc7b19;
+}
+.NamingOption-token-1veip, .NamingOption-option-33lWx:hover .NamingOption-token-1veip{
+	background-color: rgba(255,255,255,.08);
+	color: #d7d7d7;
+	cursor: auto;
+}
+.NamingOption-example-2-1sK, .NamingOption-option-33lWx:hover .NamingOption-example-2-1sK{
+	background-color: rgba(0,0,0,.3);
+	color: #d7d7d7;
+	cursor: auto;
+}
+.NamingOption-option-33lWx{
+	border-color: transparent;
+}
+.QualityProfileItem-qualityProfileItem-2Xr42, .LanguageProfileItem-languageProfileItem-1lE9m, .LanguageProfileItem-languageProfileItem-1lE9m, .TableOptionsColumn-column-2z0me{
+	background-color: transparent;
+	color: #d7d7d7;
+	border-color: transparent;
+	border-top: 1px solid rgba(120,130,140,.13);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.QualityProfileItems-qualities-2Qf0z{
+	color: #d7d7d7;
+}
+.QualityProfileItemGroup-qualityProfileItemGroup-3SvgI{
+	background-color: transparent;
+	border-color: transparent;
+	border-top: 1px solid rgba(120,130,140,.13);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.QualityProfileItemGroup-qualityProfileItemGroup-3SvgI.QualityProfileItemGroup-editGroups-19C_2{
+	background-color: transparent;
+}
+input{
+	color: #d7d7d7;
+}
+.RemotePathMapping-remotePathMapping-2h8KK, .DelayProfile-delayProfile-1jgsw{
+	border-bottom: 1px solid rgba(120,130,140,.13);
+}
+.SeriesIndexOverview-overview-1bTNa.SeriesIndexOverview-link-1Qz39.Link-link-VNquX.Link-link-VNquX.Link-to-1jNxQ:hover{
+	cursor: disabled;
+	color: #d7d7d7;
+}
+.ArtistIndexOverview-overview-3--AK:hover{
+	color: #d7d7d7;
+}
+.ArtistIndexOverview-title-2KnuZ:hover{
+	color: white;
+}
+.ImportSeriesSelectSeries-button-AkdHs, .ImportArtistSelectArtist-button-WUML4{
+	background-color: rgba(255,255,255,.08);
+	border-color: transparent;
+}
+.ImportSeriesSelectSeries-searchIconContainer-WJlHu, .ImportArtistSelectArtist-searchIconContainer-27n_z{
+	background-color: rgba(255,255,255,.08);
+	border-color:transparent;
+}
+.Tooltip-tooltip-1uk0d.Tooltip-inverse-2afKH, .Popover-popover-18SiF{
+	border-color:transparent;
+	background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+}
+.LogsTableDetailsModal-detailsText-385Up{
+	color: #d7d7d7;
+	background-color: rgba(0,0,0,.3);
+	border-color: transparent;
+}
+.Popover-title-2t205{
+	background-color:transparent;
+	border-color:transparent;
+}
+.Popover-left-2cO3y{
+	border-color:transparent;
+}
+.Popover-left-2cO3y::after{
+	border-left-color: rgba(0,0,0,.2);
+}
+.Popover-right-1kWfR::after{
+	border-right-color: rgba(0,0,0,.2);
+}
+.PageHeader-donate-3Lk-h:hover{
+	color: white !important;
+}
+.ArtistDetails-metadataMessage-iAuvq{
+	color: #aaa;
+}
+.CustomFilter-customFilter-1oZ5p:hover{
+	background-color: transparent;
+}
+.CalendarDays-day-3p9eQ, .CalendarDays-week-11Bqv, .CalendarDays-forecast-1igzr, .CalendarDays-month-oMJD-{
+	background-color: rgba(0,0,0,.3);
+	color: #d7d7d7;
+}
+.DayOfWeek-dayOfWeek--jS1P{
+	background-color: rgba(0,0,0,.6);
+	color: #d7d7d7;
+}
+.DayOfWeek-isToday-16HX_, .CalendarDay-isToday-1ZMWk{
+	background-color: rgba(255,255,255,.08);
+	color: #f9be03;
+}
+.CalendarDay-day-3WaqW{
+	border-bottom-color: rgba(120, 130, 140, .13);
+	border-left-color: rgba(120, 130, 140, .13);
+}
+.CalendarDays-days-287Rk{
+	border-right-color: rgba(120, 130, 140, .13);
+}
+.AgendaEvent-event-1-I4T:hover{
+	color: white;
+	background-color: rgba(0,0,0,.3);
+}
+.Agenda-agenda-1HdY0{
+	background-color: rgba(0,0,0,.3);
+}
+.TablePager-records-3AU9V {
+    color: #aaa;
+}
+.EpisodeDetailsModalContent-selectedTab-7Bu7j {
+    background-color: rgba(255,255,255,.08);
+    border-color: transparent;
+    color: #f9be03;
+	border-radius: 0px;
+}
+.Label-warning-27Ka6, .ProgressBar-warning-10RO_,
+.SeriesIndexFooter-missingUnmonitored-2XhXV, .ArtistIndexFooter-missingUnmonitored-6sfNk{
+	background-color: rgba(223,105,26,.8);
+	border-color: transparent;
+	color: #d7d7d7;
+}
+.Label-info-1Wa42 {
+    border-color: transparent;
+    background-color: rgba(0, 100, 100, .7);
+    color: #d7d7d7;
+}
+.SeasonPassSeason-allEpisodes-vxHTz{
+    border-color: transparent;
+    background-color: rgba(25,100,25,.5) !important;
+    color: #d7d7d7;
+}
+.Icon-success-1Nitw, .Updates-upToDateIcon-4dGgl{
+	color: rgba(25,150,50,.7);
+}
+.Label-success-1hLju, .ProgressBar-success-3zE1b,
+.SeriesIndexFooter-ended-13TOt, .ArtistIndexFooter-ended-11Spy{
+    border-color: transparent;
+    background-color: rgba(25,150,50,.5);
+    color: #d7d7d7;
+}
+.CalendarEvent-downloaded-1wXUG{
+	border-left-color:  rgba(25, 255, 0, .35) !important;
+}
+.Message-success-2GoJn{
+	border-left-color: rgba(25,150,50,.5); 
+}
+.Label-default-2zdw6, .ProgressBar-primary-1anJb, .SeriesIndexFooter-continuing-1sZHr,
+.ProgressBar-purple-1rzru, .ArtistIndexFooter-continuing-3qqQk{
+    border-color: transparent;
+    background-color: rgba(70,130,180,.8);
+	background-image: none;
+	color: #d7d7d7;
+}
+.CalendarEvent-unaired-3RFXK {
+    border-left-color: rgba(51,122,183,.8) !important;
+}
+.LogsTableRow-info-CG1y6, .Icon-info-31Ed- {
+    color: rgba(70,130,180,.8);
+}
+.Message-info-2PZwQ{
+	border-left-color: rgba(70,130,180,.8);;
+}
+.Label-danger-1rVtt, .ProgressBar-danger-3X-EI,
+.SeriesIndexFooter-missingMonitored-2Vkpt, .ArtistIndexFooter-missingMonitored-Giu8p{
+    border-color: transparent;
+    background-color: rgba(171, 0, 0, .50);
+    color: #d7d7d7;
+}
+.SeasonPassSeason-episodes-3v_IV, .AlbumStudioAlbum-tracks-2V7st{
+    border-color: transparent;
+    background-color: rgba(171, 0, 0, .50);
+    color: #d7d7d7;
+}
+.LogsTableRow-fatal-296Da {
+    color: rgba(171, 0, 0, .50);
+}
+.Alert-danger-1Z8V3 {
+    background-color: rgba(171, 0, 0, .50);
+    border-color: transparent;
+    color: #d7d7d7;
+}
+.CalendarEvent-missing-1X_IG {
+    border-left-color: rgba(171, 0, 0, .6) !important;
+}
+.SeasonPassSeason-season-3Lc-4, .AlbumStudioAlbum-season-24TO6{
+	background-color:rgba(255,255,255,.25);
+	border-color:transparent;
+	color: #d7d7d7;
+}
+.CalendarEvent-seriesTitle-1JEPE, .CalendarEventGroup-seriesTitle-3UC2O{
+	color: #d7d7d7;
+}
+.CalendarEvent-seriesTitle-1JEPE:hover, .CalendarEvent-seriesTitle-1JEPE:focus,
+.CalendarEventGroup-seriesTitle-3UC2O:hover, .CalendarEventGroup-seriesTitle-3UC2O:focus{
+	color: white;
+}
+.CalendarEvent-downloading-JbB3z {
+    border-left-color: rgba(122,67,182,.7) !important;
+}
+.CalendarEvent-event-27nY_, .AgendaEvent-event-1-I4T{
+	border-bottom-color: rgba(120, 130, 140, .13);
+}
+.Icon-warning-NNJCj {
+    color: #cc7b19;
+}
+.StarRating-frontStar-2NZmb{
+	color: #cc7b19;
+}
+.CalendarDay-dayOfMonth-3ZysC{
+	background-color: rgba(0,0,0,.2);
+	border-bottom-color: transparent;
+}
+.SeriesIndexOverview-title-1ta1o:hover{
+	color:white !important;
+}
+.prompt {
+    background-color: rgba(255,255,255,.08) !important;
+    color: #d7d7d7 !important;
+    border-radius: 4px !important;
+}
+.ui.segment{
+	background-color: transparent !important;
+	border-color: transparent !important;
+	box-shadow: none !important;
+}
+div#message.ui.segment, div#exception.ui.segment{
+	background-color: rgba(0,0,0,.3) !important;
+}
+.ui.attached.tabular.menu{
+	background-color: transparent !important;
+}
+.ui.tabular.menu .item{
+	color: #d7d7d7;
+}
+.ui.tabular.menu .item:hover{
+	color: white;
+	background-color: rgba(255,255,255,.08);
+}
+.ui.tabular.menu .active.item{
+	color: #f9be03;
+	background-color: rgba(255,255,255,.08);
+	border-color: transparent;
+	border-radius: 0px !important;
+}
+#bottommenu {
+    background-color: rgba(0,0,0,.6) !important;
+    box-shadow: none;
+    padding: 10px;
+}
+.ui.progress.success .bar{
+	border-color: transparent !important;
+    background-color: rgba(25,150,50,.5) !important;
+    color: #d7d7d7 !important;
+}
+.ui.green.label, .ui.green.labels .label{
+	background-color: #cc7b19 !important;
+	color: #d7d7d7 !important;
+	border-color: transparent !important;
+}
+.ui.yellow.progress .bar{
+	background-color: rgba(223,105,26,.8) !important;
+	border-color: transparent !important;
+	color: #d7d7d7 !important;
+}
+.ui.yellow.label, .ui.yellow.labels .label{
+	background-color: rgba(70,130,180,.8) !important;
+	border-color: transparent !important;
+	color: #d7d7d7 !important;
+}
+#fondblanc{
+	background-color: transparent;
+	box-shadow: none;
+}
+.ui.table, .ui.table thead th{
+	color: #d7d7d7;
+}
+i.black.icon{
+	color: #d7d7d7 !important;
+}
+#divmenu, .ui.inverted.menu{
+	background-color: transparent !important;
+}
+.ui.selectable.table tbody tr:hover, .ui.table tbody tr td.selectable:hover{
+	background-color: rgba(0,0,0,.3) !important;
+	color: white !important;
+}
+.ui.label{
+	color: #d7d7d7;
+	background-color: rgba(255,255,255,.2);
+}
+.ui.basic.button, .ui.basic.buttons .button{
+	background-color: rgba(255,255,255,.08) !important;
+	color: #d7d7d7 !important;
+	border-color: transparent !important;
+}
+.ui.basic.button:hover, .ui.basic.buttons .button:hover,
+.ui.basic.button:focus, .ui.basic.buttons .button:focus,
+.ui.basic.button:active, .ui.basic.buttons .button:active{
+	background-color: rgba(255,255,255,.2) !important;
+	border-color: rgba(255,255,255,.2) !important;
+	color: white !important;
+}
+.ui.info.message, .ui.orange.message {
+    background-color: rgba(0,0,0,.3);
+    border-color: transparent;
+	color: #d7d7d7;
+	box-shadow: none;
+}
+.ui.header{
+	color: #d7d7d7;
+	border-bottom: 1px solid #d7d7d7;
+}
+.ui.dividing.header{
+	border-bottom: 1px solid #e5e5e5;
+}
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local],
+.ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number],
+.ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel],
+.ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url],
+.ui.selection.dropdown{
+	box-shadow: none;
+	border-color: transparent;
+	background-color: rgba(255,255,255,.08);
+	color: #d7d7d7;
+}
+.ui.modal{
+	background-image: url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-noise.png"), url("https://raw.githubusercontent.com/rg9400/Cloud-Tautulli-Theme/master/Background/blur-dark.png");
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	color:#d7d7d7;
+}
+.ui.modal>.header, .ui.modal>.actions{
+	background-color: transparent;
+	border-top:none;
+	border-bottom:none;
+	color: #d7d7d7;
+}
+.ui.modal>.content{
+	background-color: transparent;
+}
+i.yellow.icon {
+    color: rgba(223,105,26,.8) !important;
+}
+.ui.checkbox label, .ui.checkbox+label, .ui.list .list>.item .header, .ui.list>.item .header{
+	color: #d7d7d7;
 }
