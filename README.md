@@ -1,6 +1,6 @@
 # Cloud-Radarr-Sonarr-Theme
 <h2>Cloud CSS for Radarr and Sonarr</h2>
-Credits to <a href="https://github.com/iFelix18/Darkerr">Darkerr</a>, <a href="https://github.com/gilbN">GilbN</a>, and <a href="https://github.com/leram84">Leram</a> whose work was the base and inspiration for this. 
+I strongly suggest you use https://github.com/rg9400/CloudThemes going forward as that is the most up to date repo. Setup instructions do link to that repo now. 
 
  ### Setup
 <details><summary>Expand</summary>
