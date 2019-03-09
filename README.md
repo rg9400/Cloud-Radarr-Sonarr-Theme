@@ -1,6 +1,11 @@
 # Cloud-Radarr-Sonarr-Theme
+
+** This is no longer maintained
+
 <h2>Cloud CSS for Radarr and Sonarr</h2>
 I strongly suggest you use https://github.com/rg9400/CloudThemes going forward as that is the most up to date repo. Setup instructions do link to that repo now. 
+
+It used to have support for Lidarr and Sonarr V3, but when they update their webpack, it changes each and every selector to a different hash, breaking the CSS completely. While I would like to fix my CSS, this is too cumbersome to do, especially since it may happen again in the future.
 
  ### Setup
 <details><summary>Expand</summary>
